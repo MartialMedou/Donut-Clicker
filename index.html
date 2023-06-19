@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/452356992c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section id-"header">
+        <div class="container">
+            <div class="header">
+                <div class="header-left">
+                        <h1> Fred's The Baker <br><span>Baking Company</span></p>
+                    </nav>
+                </div>
+                <div class="header-central">
+                    <div class='header-central-top'>
+                        <button class='drop-button'> <h3>DONUT CLICKER</h3> </button>
+                    </div>
+                    <div class="header-central-bottom">
+                    <nav>
+                        <ul class="tab-titles">
+                            <li class="tab-links active-link" onclick="opentab('about')"><a href="#abouts">About </a></li>
+                            <li class="tab-links" onclick="opentab('inspiration')"><a href="#inspirations">Inspiration</a></li>
+                            <li class="tab-links" onclick="opentab('instruction')"><a href="#instructions">Instructions</a></li>
+                            <li class="tab-links" onclick="opentab('warning')"><a href="#warnings">Warning</a></li>
+                        </ul>
+                    </nav>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <h1>Auto Clicker <br><span>Store</span></h1>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="donut-factory">
+        <div class="container2">
+            <div class="factory">
+                <div class="about-col-1">
+                    <h1>Donut Factory</h1>
+                    <h2>Click on the donut to start helping!</h2>
+                    <div id='donut-maker'>
+
+                        <div class='donut-container'>
+                            <button id="donut-button" onclick='addDonut()'> <img src="images/donut1.png" alt=""> </button>
+                        </div>
+                        <h2 id='donut-count'>0</h2><h2> Donuts</h2> 
+                    </div>
+                    <div id="clicker-store">
+                        <h1>Auto Clicker Shop</h1>
+                        <div id="auto-clicker">
+                        <h3>Your Total Number of Auto Clickers:</h3>
+                        <h2 id="auto-clicker-count"> 0 </h2>
+                        <button id="auto-button" onclick='addAutoClick()' disabled> Purchase Auto-Clicker</button>
+                    </div>
+                    <div id="information">
+                        <button id = 'refresh' onclick=" location.reload()" id ="refresh">Refresh and Start from Scratch</button>
+                    </div>
+                </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Donut Clicker Mission</h1>
+                    <div>
+                        <p>Hello and thank you for stopping by to Fred's Baking Company. Just as you got the information about Fred retirement, we need your help.<br> Fred has been running his donut shop the past forty (40) years, now and he's ready to hang up the apron. <br>However, Fred's love for donuts has not changed and he likes to share his new creation to his customers and here is where your assistance is needed!</p>
+                        <p>Fred contracted me to seek help in making his most loved latest donuts for his shop with the participation of his customers while he enjoys retirement and we are going to make the process extremely simple.</p>
+                        <p>Let's give him a hand!</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="about">
+                        <h2>About Fred's Baking Company</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque quam consequuntur id facere optio expedita accusantium laudantium soluta consequatur, possimus libero, laborum voluptas excepturi.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum architecto harum aliquam unde voluptates mollitia magni eveniet similique officiis modi perferendis quasi quibusdam iure odit possimus ad aut, nisi vitae a delectus dolores, rerum amet id rem! Officiis nisi quas possimus dignissimos quae temporibus quia dolor, expedita mollitia doloremque consequatur!</p>
+                    </div>
+                    <div class="tab-contents" id="inspiration">
+                        <h2>Our Inspiration</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur!</p>
+                        <p> <a href="https://orteil.dashnet.org/cookieclicker/" target = '_blank'> Orteil Cookie Clicker</a></p>
+                    </div>
+                    <div class="tab-contents" id="instruction">
+                        <h2>Instructions</h2>
+                        <p></p>In order to help make donuts, click anywhere on the donut image and watch the donut count go up!</p>
+                        <p>Let's make it EASY for you. After you make 100 donuts you can purchase an auto clicker using those.</p>
+                        <p>This auto clicker will help you make 1 donut every second. </p>
+                        <p>There is currently no limit on how many auto clickers you can purchase, the price for every additional one will increase by 10%.</p>
+                    </div>
+                    <div class="tab-contents" id="warning">
+                        <h2>WARNING!!! </h2>
+                        <p>This Process is EXTREMELY ADDICTIVE <br><span>Click at your own risk!!!!!!!</span></p>
+                    </div>
+                    <div class="contact">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> contact@example.com </p> 
+                        <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
+                        <div class="social-icons">
+                            <a href="https//facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="copyright">
+            &copy; Copyright 2023, Made with <i class="fa-solid fa-heart"></i> by Marcelus LEGRAND, Inc.
+        </div>
+    </div>
+    <script>
+
+
+    </script>
+
+ >
+    <script src="main.js"></script>
+</body>
+</html>
