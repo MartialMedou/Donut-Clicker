@@ -40,14 +40,16 @@ Body{
 .header-central{
     flex-basis: 40%;
     width: 100%;
-    padding: 1px;
+    height: 200px;
+    padding: 2px;
     color: white;
 }
-.header-central-top{
+.drop-button{
     font-size: 52px;
     cursor: pointer;
+    display: block;
 }
-.header-central-top button{
+.drop-button{
         align-content: center;
         background: #fd0303;
         color: white;
@@ -57,29 +59,37 @@ Body{
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
         width: 100%;
+        height: 80px;
         font-size: 32px;
 }
-.header-central-bottom nav li{
+.drop-menu{
+    display: none;
+    position: absolute;
+}
+.drop-menu nav li{
     list-style: none;
 }
-.header-central-bottom nav a{ 
+.drop-menu nav a{ 
     padding-top: 25px;
     text-decoration: none;
     margin-right: 20px;
     color: white;
 }
-.header-central-bottom nav ul{
+.drop-menu nav ul{
     display: flex;
     align-content: center;
     justify-content: space-between;
     padding-top: 10px;
 }
-.header-central-bottom{
-    display: inline-block;
+
+.drop-button:active .drop-button{
+    height: 150px;
 }
-.header-central-top:hover .header-central-bottom nav {
+
+.drop-button:active .drop-menu nav{
     display: block;
 }
+
 .header-right{
     flex-basis: 15%;
     font-size: 1px;
@@ -118,7 +128,6 @@ Body{
 .about-col-1 h1{
     font-size: 36px;
     color: red;
-    flex-basis: 35%;
     text-align: center;
     padding-bottom: 30px;
 }
@@ -136,6 +145,8 @@ Body{
 .donut-container img {
     width: 250px;
     height: 250px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 #donut-button{
     background: none;
@@ -149,45 +160,9 @@ Body{
     font-size: 32px;
     margin-top: 15px;
 }
-#clicker-store h1{
-    font-size: 36px;
-    margin-top: 20px;
-}
-#auto-clicker h3{
-    font-size: 26px;
-    margin-bottom: 18px;
-}
-#auto-button{
-    font-family: 'Poppins', Bahnschrift SemiBold;;
-    width: 300px;
-    height: 43px;
-    font-size: 20px;
-    border-radius: 15px;
-    border-style: groove red;
-    background: linear-gradient(315deg, #8256e7 0%, #B5FFFC 50%, #d052f3 100%);
-    margin-bottom: 20px;
-}
-#auto-button:active {
-    transform: translateY(2px);
-}
-#auto-clicker-count{
-    text-align: center;
-    font-size: 32px;
-}
-#refresh{ 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    background:linear-gradient(315deg, #8256e7 0%, #B5FFFC 50%, #d052f3 100%) ;
-    width: 375px;
-    height: 40px;
-    border-radius: 15px ;
-    border-style: groove  red;
-}
-#information button:active {
-    transform: translateY(2px);}
+
 .about-col-2{
-    flex-basis: 65%;
+    flex-basis: 44%;
     font-size: 18px;
 }
 .sub-title{
@@ -237,6 +212,9 @@ Body{
 #warning p{
     font-size: 30px;
 }
+#price p{
+    font-size: 30px;
+}
 .tab-contents{
     display: none;
 }
@@ -247,22 +225,75 @@ Body{
 .tab-contents.active-tab{
     display: block;
 }
-.about-col-2 .contact{
+
+.about-col-3{
+    flex-basis: 3%;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+#clicker-store h1{
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: red;
+
+}
+#auto-clicker h3{
+    font-size: 26px;
+    margin-bottom: 30px;
+
+}
+#auto-button{
+    font-family: 'Poppins', Bahnschrift SemiBold;;
+    width: 300px;
+    height: 43px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-style: groove red;
+    background: linear-gradient(315deg, #8256e7 0%, #B5FFFC 50%, #d052f3 100%);
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+#auto-button:active {
+    transform: translateY(2px);
+}
+#auto-clicker-count{
+    text-align: center;
+    font-size: 32px;
+}
+#refresh{ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background:linear-gradient(315deg, #8256e7 0%, #B5FFFC 50%, #d052f3 100%) ;
+    width: 375px;
+    height: 40px;
+    border-radius: 15px ;
+    border-style: groove  red;
+}
+#information button:active {
+    transform: translateY(2px);}
+
+.about-col-3 .contact{
     position: relative;
     float: right;
     padding-top: 50px;
 }
 .contact {
-    margin-right: 80px;
+    margin-right: 40px;    
+    text-align: left;
 }
 .contact p{
     margin-top: 30px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 .contact p i{
     color: red;
-    font-size: 40px;
+    font-size: 20px;
     margin-right: 15px;
 }
 .social-icons{
@@ -270,7 +301,7 @@ Body{
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 50px;
+    font-size: 40px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;

@@ -14,28 +14,37 @@
         <div class="container">
             <div class="header">
                 <div class="header-left">
-                        <h1> Fred's The Baker <br><span>Baking Company</span></p>
-                    </nav>
+                    <h1> Fred's The Baker <br><span>Baking Company</span></p>
+                        </nav>
                 </div>
                 <div class="header-central">
                     <div class='header-central-top'>
-                        <button class='drop-button'> <h3>DONUT CLICKER</h3> </button>
+                        <button class='drop-button' onclick="menuClick()">
+                            <h3>DONUT CLICKER</h3>
+                        </button>
                     </div>
                     <div class="header-central-bottom">
-                    <nav>
-                        <ul class="tab-titles">
-                            <li class="tab-links active-link" onclick="opentab('about')"><a href="#abouts">About </a></li>
-                            <li class="tab-links" onclick="opentab('inspiration')"><a href="#inspirations">Inspiration</a></li>
-                            <li class="tab-links" onclick="opentab('instruction')"><a href="#instructions">Instructions</a></li>
-                            <li class="tab-links" onclick="opentab('warning')"><a href="#warnings">Warning</a></li>
-                        </ul>
-                    </nav>
+                        <div id="dropdown" class="drop-menu">
+                            <nav>
+                                <ul class="tab-titles">
+                                    <li class="tab-links active-link" onclick="opentab('about')"><a href="#abouts">About
+                                        </a></li>
+                                    <li class="tab-links" onclick="opentab('inspiration')"><a
+                                            href="#inspirations">Inspiration</a></li>
+                                    <li class="tab-links" onclick="opentab('instruction')"><a
+                                            href="#instructions">Instructions</a></li>
+                                    <li class="tab-links" onclick="opentab('price')"><a 
+                                        href="#prices" style="color: darkgreen;">Auto Clicker Price</a></li>
+                                    <li class="tab-links" onclick="opentab('warning')"><a 
+                                        href="#warnings">Warning</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
                 <div class="header-right">
                     <h1>Auto Clicker <br><span>Store</span></h1>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -52,16 +61,7 @@
                         </div>
                         <h2 id='donut-count'>0</h2><h2> Donuts</h2> 
                     </div>
-                    <div id="clicker-store">
-                        <h1>Auto Clicker Shop</h1>
-                        <div id="auto-clicker">
-                        <h3>Your Total Number of Auto Clickers:</h3>
-                        <h2 id="auto-clicker-count"> 0 </h2>
-                        <button id="auto-button" onclick='addAutoClick()' disabled> Purchase Auto-Clicker</button>
-                    </div>
-                    <div id="information">
-                        <button id = 'refresh' onclick=" location.reload()" id ="refresh">Refresh and Start from Scratch</button>
-                    </div>
+                    
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">Donut Clicker Mission</h1>
@@ -91,8 +91,26 @@
                         <h2>WARNING!!! </h2>
                         <p>This Process is EXTREMELY ADDICTIVE <br><span>Click at your own risk!!!!!!!</span></p>
                     </div>
+                    <div class="tab-contents" id="price">
+                        <h2>AUTO CLICKER PRICE </h2>
+                        <p>Donut Clicker Price: <span style="color: darkgreen;">100 Donuts</span> <br>For any additional Auto Clicker, <span style="color: darkgreen;">Price will increase by 10%</span></p>
+                    </div>
+                    
+                </div>
+                <div class="about-col-3">
+                    <div id="clicker-store">
+                        <h1>Auto Clicker Shop</h1>
+                        <div id="auto-clicker">
+                            <h3>Your Total Number of Auto Clickers:</h3>
+                            <h2 id="auto-clicker-count"> 0 </h2>
+                            <button id="auto-button" onclick='addAutoClick()' disabled> Purchase Auto-Clicker</button>
+                        </div>
+                        <div id="information">
+                            <button id = 'refresh' onclick=" location.reload()" id ="refresh">Refresh and Start from Scratch</button>
+                        </div>
+                    </div>
                     <div class="contact">
-                        <h1 class="sub-title">Contact Me</h1>
+                        <h1 class="sub-title">Contact Us</h1>
                         <p><i class="fa-solid fa-paper-plane"></i> contact@example.com </p> 
                         <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
                         <div class="social-icons">
@@ -111,13 +129,7 @@
         <div class="copyright">
             &copy; Copyright 2023, Made with <i class="fa-solid fa-heart"></i> by Marcelus LEGRAND, Inc.
         </div>
-    </div>
-    <script>
-
-
-    </script>
-
- >
-    <script src="main.js"></script>
+    </section>
+    <script src="app.js"></script>
 </body>
 </html>

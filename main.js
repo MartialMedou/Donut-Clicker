@@ -27,6 +27,16 @@ function addDonut() {
     }
 
 }
+let menuhidden=true;
+function menuClick(){
+    if (menuhidden){
+        document.getElementById("dropdown").style.display='block';
+    } else {
+        document.getElementById("dropdown").style.display='none';
+    }
+    menuhidden=!menuhidden;
+
+}
 
 function addAutoClick() {
 
